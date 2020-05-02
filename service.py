@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-
 pred = Predicter()
 
 @app.route('/sentiment',methods=['GET','POST'])
@@ -21,28 +20,14 @@ def sentiment():
         sentiment = pred.predict_sentiment(sentence)
 
         if sentiment > 0.5:
-            feeling = 'Good'
+            feeling = 'positive '
         else:
-            feeling = 'Not Good'
+            feeling = 'negative'
 
-        return render_template('sentiment.html',feedback=feeling)
+        return render_template('index.html',feedback=feeling,sentiment_value=round(sentiment,3))
 
     return render_template('index.html')
 
-
-
-
-
-
-# @app.route('/hello',methods=['POST'])
-# def hello():
-#     message = request.get_json(force=True)
-#     name = message['name']
-#     print(name)
-#     response = {
-#         'greeting': 'Hello, ' + name + '!'
-#     }
-#     return jsonify(response)
 
 
 
