@@ -3,7 +3,7 @@
 
 
 This is a micro Tutorial on how create API for your sentiment analysis service. It uses the the model we worked on [Transformers for Sentiment Analysis](
-https://github.com/AMMI-NLP-Study-Group/pytorch-sentiment-analysis/blob/master/6%20-%20Transformers%20for%20Sentiment%20Analysis.ipynb). Please before playing with this code go througn the notebook and save your model.
+https://github.com/AMMI-NLP-Study-Group/pytorch-sentiment-analysis/blob/master/6%20-%20Transformers%20for%20Sentiment%20Analysis.ipynb). Please before playing with this code go through the notebook and save your model.
 
 
 ### Installation
