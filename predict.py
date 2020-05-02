@@ -54,4 +54,4 @@ class Predicter():
 
 
 # pr = Predicter()
-# print(pr.predict_sentiment('great work '))
+# print(pr.predict_sentiment('this is good sentiment'))
